@@ -13,7 +13,7 @@ html {
   background-color: #fff;
   color: #58585b;
   font-family: 'Lato', Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.65;
 }
 
@@ -29,10 +29,11 @@ img {
 
 h2, h3, h4 {
   color: #323031;
+  line-height: 1.2;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 900;
   margin-bottom: 20px;
   position: relative;
@@ -50,14 +51,14 @@ h2::before {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 700;
   margin-bottom: 10px;
   position: relative;
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 10px;
@@ -92,6 +93,13 @@ b, strong {
 
 /* -------------------------- Modules -------------------------- */
 
+/* == Brand == */
+
+.brand {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 /* == Bucket == */
 
 .bucket {
@@ -120,20 +128,19 @@ b, strong {
   position: relative;
 }
 
-/* == Header == */
+/* == Hero == */
 
-.header {
+.hero {
   background-color: #323031;
-  background-image: url('bg-header.jpg');
+  background-image: url('bg-hero.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 40px;
-  min-height: 492px;
   position: relative;
 }
 
-.header::before {
+.hero::before {
   background-color: black;
   bottom: 0;
   content: '';
@@ -147,11 +154,10 @@ b, strong {
   z-index: 0;
 }
 
-.header-content {
+.hero-content {
   align-items: center;
   display: flex;
   justify-content: center;
-  min-height: 492px;
 }
 
 /* == Grid == */
@@ -164,15 +170,9 @@ b, strong {
 
 .grid-box {
   box-sizing: border-box;
+  margin-bottom: 20px;
   padding-left: 20px;
-}
-
-.grid-box--1of2 {
-  width: calc(100% / 2);
-}
-
-.grid-box--1of3 {
-  width: calc(100% / 3);
+  width: 100%;
 }
 
 /* == Logo Grid == */
@@ -195,7 +195,7 @@ b, strong {
   border: 2px solid #ff3b1f;
   color: #ff3b1f;
   display: block;
-  font-size: 18px;
+  font-size: 1.125rem;
   height: 40px;
   left: -40px;
   line-height: 36px;
@@ -220,9 +220,8 @@ b, strong {
 .tagline {
   color: #929497;
   display: block;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 1px;
-  margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -242,8 +241,8 @@ b, strong {
 /* == Well == */
 
 .well {
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /* -------------------------- Modules -------------------------- */
@@ -257,11 +256,11 @@ b, strong {
 }
 
 .fs-l {
-  font-size: 19px;
+  font-size: 1.1875rem;
 }
 
 .fs-s {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .lh-1 {
@@ -287,3 +286,41 @@ b, strong {
 .ml-2 {
   margin-left: 40px;
 }
+
+/* -------------------------- Media Queries -------------------------- */
+
+@media screen and (min-width: 775px) {
+  html {
+    font-size: 16px;
+  }
+
+  .brand {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .grid-box {
+    margin-bottom: 0;
+  }
+  .grid-box--1of2 {
+    width: calc(100% / 2);
+  }
+  .grid-box--1of3 {
+    width: calc(100% / 3);
+  }
+
+  .hero,
+  .hero-content {
+    min-height: 492px;
+  }
+
+  .tagline {
+    margin-bottom: 20px;
+  }
+
+  .well {
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+
