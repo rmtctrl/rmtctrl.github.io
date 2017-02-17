@@ -220,6 +220,11 @@ b, strong {
   display: block;
 }
 
+.thumb--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* == Well == */
 
 .well {
