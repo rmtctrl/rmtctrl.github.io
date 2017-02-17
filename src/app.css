@@ -158,6 +158,8 @@ b, strong {
   align-items: center;
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 /* == Grid == */
@@ -316,6 +318,11 @@ b, strong {
 
   .hero {
     margin-bottom: 40px;
+  }
+
+  .hero-content {
+    padding-bottom: 0;
+    padding-top: 0;
   }
 
   .tagline {
