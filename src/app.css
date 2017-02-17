@@ -77,6 +77,13 @@ a {
   color: #ff3b1f;
   font-weight: 700;
   text-decoration: underline;
+  transition: 0.3s ease-in-out;
+}
+
+a:active,
+a:focus,
+a:hover {
+  color: #323031;
 }
 
 b, strong {
