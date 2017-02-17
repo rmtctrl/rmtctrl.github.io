@@ -206,6 +206,13 @@ b, strong {
   text-transform: uppercase;
 }
 
+/* == Thumb == */
+
+.thumb {
+  border-radius: 4px;
+  display: block;
+}
+
 /* == Well == */
 
 .well {
