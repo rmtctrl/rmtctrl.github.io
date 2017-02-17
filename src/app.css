@@ -311,6 +311,10 @@ b, strong {
     width: calc(100% / 3);
   }
 
+  .logoGrid-item {
+    margin-bottom: 40px;
+  }
+
   .hero,
   .hero-content {
     min-height: 492px;
