@@ -136,7 +136,7 @@ b, strong {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -312,6 +312,10 @@ b, strong {
   .hero,
   .hero-content {
     min-height: 492px;
+  }
+
+  .hero {
+    margin-bottom: 40px;
   }
 
   .tagline {
