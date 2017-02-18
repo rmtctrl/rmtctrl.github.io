@@ -1,0 +1,1 @@
+function handleImageLoad(e){setTimeout(function(){hero.classList.add("is-loaded")},500)}var image=document.createElement("img"),hero=document.querySelector(".hero");image.src="public/bg-hero.jpg",image.addEventListener("load",handleImageLoad);
