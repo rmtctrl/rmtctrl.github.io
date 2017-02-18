@@ -154,18 +154,6 @@ b, strong {
   z-index: 0;
 }
 
-.hero.is-loaded::before {
-  opacity: 0.35;
-  transform: scale(1);
-  visibility: visible;
-}
-
-.hero.is-loaded .hero-content {
-  opacity: 1;
-  transform: scale(1);
-  visibility: visible;
-}
-
 .hero-content {
   align-items: center;
   display: flex;
@@ -174,8 +162,8 @@ b, strong {
   padding-bottom: 40px;
   padding-top: 40px;
   position: relative;
-  transform: scale(0.9);
-  transition: 0.5s 0.3s ease-in-out;
+  transform: translateY(20%);
+  transition: 1s 0.2s cubic-bezier(0.03, 0.23, 0.58, 1);
   visibility: hidden;
   z-index: 2;
 }
@@ -263,6 +251,20 @@ b, strong {
 .well {
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+/* -------------------------- States -------------------------- */
+
+.is-hero-loaded .hero::before {
+  opacity: 0.35;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.is-hero-loaded .hero-content {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
 
 /* -------------------------- Modules -------------------------- */
