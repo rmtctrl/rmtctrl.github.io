@@ -160,13 +160,23 @@ b, strong {
   visibility: visible;
 }
 
+.hero.is-loaded .hero-content {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
 .hero-content {
   align-items: center;
   display: flex;
   justify-content: center;
+  opacity: 0;
   padding-bottom: 40px;
   padding-top: 40px;
   position: relative;
+  transform: scale(0.9);
+  transition: 0.5s 0.3s ease-in-out;
+  visibility: hidden;
   z-index: 2;
 }
 
