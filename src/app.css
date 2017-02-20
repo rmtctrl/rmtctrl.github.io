@@ -345,6 +345,7 @@ b, strong {
   }
 
   .hero-content {
+    height: 492px;
     padding-bottom: 0;
     padding-top: 0;
   }
