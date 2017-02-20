@@ -96,8 +96,8 @@ b, strong {
 /* == Brand == */
 
 .brand {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 /* == Bucket == */
@@ -310,6 +310,13 @@ b, strong {
 }
 
 /* -------------------------- Media Queries -------------------------- */
+
+@media screen and (min-width: 350px) {
+  .brand {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 
 @media screen and (min-width: 775px) {
   html {
