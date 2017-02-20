@@ -91,6 +91,13 @@ b, strong {
   font-weight: 700;
 }
 
+::-moz-selection {
+  background-color: rgba(146, 148, 151, 0.2);
+}
+::selection {
+  background-color: rgba(146, 148, 151, 0.2);
+}
+
 /* -------------------------- Modules -------------------------- */
 
 /* == Brand == */
