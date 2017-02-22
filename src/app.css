@@ -164,6 +164,7 @@ b, strong {
 .hero-content {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   opacity: 0;
   padding-bottom: 40px;
@@ -173,6 +174,12 @@ b, strong {
   transition: 1s 0.2s cubic-bezier(0.03, 0.23, 0.58, 1);
   visibility: hidden;
   z-index: 2;
+}
+
+.hero-link:active,
+.hero-link:focus,
+.hero-link:hover {
+  color: white;
 }
 
 /* == Grid == */
